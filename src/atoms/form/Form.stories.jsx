@@ -4,7 +4,7 @@ import { action } from "@storybook/addon-actions";
 import Form from "./Form";
 
 export default {
-  title: "Example/Form",
+  title: "Atoms|Form",
   component: Form,
   argTypes: {
     onChange: { action: "onSubmit" },

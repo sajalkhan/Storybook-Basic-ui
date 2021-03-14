@@ -6,10 +6,5 @@ export default {
   component: Icon,
 };
 
-export const IconFacebook = () => <Icon>facebook</Icon>;
-
-const Template = (args) => <Icon {...args} />;
-export const IconGoogle = Template.bind({});
-IconGoogle.args = {
-  children: "google",
-};
+export const IconFacebook = () => <Icon facebook />;
+export const IconGoogle = () => <Icon google />;

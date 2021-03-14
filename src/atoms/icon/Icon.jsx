@@ -1,10 +1,12 @@
 import React from "react";
+import cn from "classnames";
 
-const Icon = ({ children }) => (
+const Icon = ({ facebook, google }) => (
   <div
-    className={
-      children === "facebook" ? "icon icon-facebook" : "icon icon-google"
-    }
+    className={cn("icon", {
+      "icon-facebook": !!facebook,
+      "icon-google": !!google,
+    })}
   />
 );
 
